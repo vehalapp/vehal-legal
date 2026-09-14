@@ -1,0 +1,88 @@
+:root {
+  --ink: #2B1B6B;
+  --sky: #7EC8F8;
+  --gum: #FF7A9C;
+  --lemon: #FFE56A;
+  --mint: #7BE0C2;
+  --paper: #FFF4FB;
+  --slate: #5A4B8A;
+  --ticket: #FFF7C8;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Nunito", "Avenir Next", "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+body { padding: 0 0 48px; }
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 240px;
+  padding: 18px 16px 8px;
+  border-bottom: 4px solid var(--ink);
+}
+.hero.sky { background: var(--sky); }
+.hero.mint { background: var(--mint); }
+.hero.gum { background: var(--gum); }
+.hero svg { display: block; width: 100%; height: 220px; }
+.wrap { padding: 20px 18px 0; max-width: 720px; margin: 0 auto; }
+.pill {
+  display: inline-block;
+  background: var(--lemon);
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+}
+h1 {
+  font-family: "Fredoka", "Avenir Next", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 12px 0 8px;
+  letter-spacing: -0.03em;
+}
+h2 {
+  font-family: "Fredoka", "Avenir Next", sans-serif;
+  font-size: 18px;
+  margin: 22px 0 8px;
+}
+.meta { color: var(--slate); font-weight: 700; font-size: 14px; }
+.card {
+  background: #fff;
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 16px 18px;
+  box-shadow: 8px 8px 0 var(--ink);
+  margin: 14px 0 0;
+}
+a {
+  color: var(--gum);
+  font-weight: 800;
+  text-decoration: none;
+}
+a:focus-visible { outline: 3px solid var(--lemon); outline-offset: 2px; }
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.links a {
+  background: #fff;
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 0 var(--ink);
+}
+p { margin: 0 0 10px; font-weight: 600; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; }
+}
